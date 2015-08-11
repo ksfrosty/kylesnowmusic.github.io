@@ -65,17 +65,18 @@ body {
 }
 
 .title h1, h2 {
+    text-shadow: 1px 1px 1px Grey;
     line-height: .5em;
 }
 
 .title h1 {
-    font-family: "Joesfin Sans", sans-serif;
-    font-size: 4.5em;
-    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4.75em;
+    font-weight: 300;
 }
 
 .title h2 {
-    font-size: 4em
+    font-size: 3em;
     font-weight: 300;
 }
 
