@@ -1,0 +1,112 @@
+/* Responsive Design */
+* {
+    box-sizing: border-box;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+body { 
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    background-color: black;
+}
+
+
+.header {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 400px;
+    display: inline-table;
+    background-image: url('Website%20Banner.png');
+    background-size: cover;
+    text-align: center;
+    font-family: "Josefin Sans"; 
+}
+.title {
+    margin-top: 70px;   
+}
+.title hr {
+    width: 350px; 
+}
+
+.title h1, h2 {
+    font-weight: 400;
+    line-height: .5em;
+}
+
+.title h1 {
+    font-size: 4em;
+}
+
+.title h2 {
+    font-size: 3em;
+}
+
+.navigation {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 20pt;
+    background-color: rgba(96,96,96,0.5); 
+}
+
+.navigation ul {
+    margin: 0px;   
+}
+
+.navigation li {
+    list-style-type: none; 
+    display: inline;    
+}
+
+.navigation li a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navigation a:hover {
+    background-color: rgba(96,96,96,0.75);         
+}
+
+.navigation a:active {
+    background-color: none;
+}
