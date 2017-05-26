@@ -16,6 +16,9 @@ Released   : 20130602
 <title>Kyle Snow | Performances</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 <!--[if IE 6]>
@@ -24,7 +27,7 @@ Released   : 20130602
 </head>
 <body>
 <div id="wrapper">
-	<div id="menu" class="container">
+	<div id="menu" class="container"style="width:100%; padding:0px;">
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
@@ -45,8 +48,8 @@ Released   : 20130602
 			<div class="title">
 				<h2>Upcoming Events</h2>
             </div>
-                <div id="2016" class="performance-year">
-                    <h3>2016</h3>
+                <div id="2017" class="performance-year">
+                    <h3>2017</h3>
                     <div class="performance">
                         <p>To Be Announced</p>
                     </div>
@@ -54,6 +57,28 @@ Released   : 20130602
             <div class="title">
                 <h2>Previous Events</h2>
             </div>
+                <div class="performance-year">
+                    <h3>2017</h3>
+                    <div class="performance">
+                        <p>April 28<sup>th</sup> - <i>Miniatures for Solo Harp</i>, Danielle Cordray</p>
+                        <ul><li>8:00pm, University of North Texas Voertman Hall</li></ul>
+                    </div>
+                    <div class="performance">
+                        <p>March 10<sup>th</sup> - <i>Shine/luster</i></p>
+                        <ul><li>10:30pm, Lone Star Taps &amp; Caps</li></ul>
+                    </div>
+                    <div class="performance">
+                        <p>February 27<sup>th</sup> - <i>Shine/luster</i></p>
+                        <ul><li>8:00pm, University of North Texas MEIT</li></ul>
+                    </div>
+                </div>
+                <div id="2016" class="performance-year">
+                    <h3>2016</h3>
+                    <div class="performance">
+                        <p>November 1<sup>st</sup> - <i>I Would but I Can't</i>, University of North Texas (Assorted Performers)</p>
+                        <ul><li>8:00pm, University of North Texas Recital Hall</li></ul>
+                    </div>
+                </div>
                 <div id="2015" class="performance-year">
                     <h3>2015</h3>
                     <div class="performance">
@@ -85,17 +110,25 @@ Released   : 20130602
                 </div>
 		</div>
 		<div id="sidebar">
-			<div class="box1">
-				<div class="title">
-					<h2>By Date</h2>
+			<input type="checkbox" id="slide" name="" value="" />
+	<div class="container">
+		<label for="slide" class="toggle">☰</label>
+		<nav class="sidebar"> 
+			<div id="popout">
+            <div class="title">
+					<h2>Date</h2>
 				</div>
-				<ul class="style2">
-                    <li><a href="#2016">2016</a></li>
+            <ul class="style2">
+				    <li><a href="#2017">2017</a></li>
+					<li><a href="#2016">2016</a></li>
 					<li><a href="#2015">2015</a></li>
 					<li><a href="#2014">2014</a></li>
-                    <li><a href="#2013">2013</a></li>
-				</ul>
-			</div>
+					<li><a href="#2013">2013</a></li>
+			</ul>
+		      </div>
+                </nav>
+	</div>
+
 		</div>
 	</div>
 </div>

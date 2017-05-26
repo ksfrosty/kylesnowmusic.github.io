@@ -8,7 +8,7 @@ body {
 	padding: 0px;
 	background: #171717;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 12pt;
+	font-size: 14pt;
 	font-weight: 300;
     
 	color: #363636;
@@ -240,7 +240,6 @@ hr {
 		padding: 1em 3em;
 		background: rgba(0,0,0,0.4);
 		text-transform: uppercase;
-        text-shadow: -1px -1px 0 rgba(0,0,0,1);
 		z-index: 10;
 	}
 	
@@ -248,7 +247,10 @@ hr {
 	{
 		letter-spacing: 0.10em;
 		text-align: right;
-		font-size: 3em;
+		font-size: 2.75em;
+        text-shadow: -1px -1px 0 #6F6F6F;
+        cursor: text;
+        
 	}
 	
 	#logo p 
@@ -336,6 +338,35 @@ hr {
 	padding: 4em 0em 5em 0em;
 }
 
+@media screen and (max-width: 1217px) {
+    #page {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #page {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 1017px) {
+    #page {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #page {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 797px) {
+    #page {
+        margin-left: 15px;
+    }
+}
 /** CONTENT */
 
 #content
@@ -352,7 +383,9 @@ hr {
 	{
         position: absolute;
         right: 0;
-		max-width: 345px;
+		max-width: 375px;
+        
+	    
 	}
 	
 	#sidebar .title h2
@@ -364,6 +397,81 @@ hr {
 	{
 		margin-bottom: 3em;
 	}
+
+    #popout
+    {   
+        background: #FFF;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        padding: 15px 15px 0px 15px;
+        max-width: 375px;
+    }
+
+    .toggle 
+    {
+        text-decoration: none;
+        font-size: 2em;
+        color: rgba(0, 0, 0, 0.61);
+        -webkit-transition: all 0.65s ease-out 0.00844155844s;
+        -moz-transition: all 0.65s ease-out 0.00844155844s;
+        transition: all 0.65s ease-out 0.00844155844s;
+        position: absolute;
+        right: 5px;
+        z-index: 0;
+        cursor: pointer;
+        background: rgb(234, 234, 234);
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        padding: 0px 8px;
+        margin-right: -5px;
+       
+        
+    } 
+
+    .sidebar 
+    {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: -380px;
+        -webkit-transition: all 0.65s ease-out 0s;
+        -moz-transition: all 0.65s ease-out 0s;
+        transition: all 0.65s ease-out 0s;
+        width: 375px;
+    }
+
+@media screen and (max-width: 772px) {
+    #slide:checked + .container .toggle 
+    {
+        right: 400px;
+    }
+}
+    #slide:checked + .container .sidebar 
+    {
+        right: 5px;
+    }
+
+    #slide:checked + .container .toggle 
+    {
+        right: 385px;
+    }
+
+@media screen and (max-width: 767px) {
+    
+    #slide:checked + .container .toggle 
+    {
+        right: 400px;
+    }
+    
+    .toggle {
+        padding-right: 40px;
+        margin-right: -20px;
+    }
+}
+    #slide 
+    {
+        display: none; 
+    }
+
+
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -428,7 +536,6 @@ hr {
 	{
 		overflow: hidden;
 		padding: 5em 0em 0em 0em;
-		border-bottom: 1px solid #E5E5E5;
 		text-align: center;
 	}
 	
@@ -529,6 +636,11 @@ hr {
         max-width: 770px;
     }
 
+    #works-list-notes strong
+    {
+        font-weight: 500;
+    }
+
 /*********************************************************************************/
 /* Performances                                                                     */
 /*********************************************************************************/
@@ -593,3 +705,7 @@ hr {
         margin-left: 30px;
         
     }
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|Varela+Round);
+
+
